@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src=""></script>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.6.2.css">
+    <script src="https://code.jquery.com/qunit/qunit-2.6.2.js"></script>
+</head>
+<body>
+    <div id="qunit"></div>    
+    <div id="qunit-fixture"></div>    
+
+    <script>
+        // QUnit.test('a basic test example',
+        // function(assert) {
+        //     var value="Hello";
+        //     assert.equal(value, 'Hello', 'We expect value to be Hello');
+        // });
+    
+        // var a="check";
+        // QUnit.test('ok test',
+        // function(assert) {
+        //     assert.ok(true, "true succeeds");
+        //     assert.ok(1, "true succeeds");
+        //     assert.ok("non-empty", "true succeeds");
+
+        //     assert.ok(false, "true succeeds");
+        //     assert.ok(0, "true succeeds");
+        //     assert.ok("", "true succeeds");
+        //     assert.ok(NaN, "true succeeds");
+        //     assert.ok(null, "true succeeds");
+        //     assert.ok(undefined, "true succeeds");
+        //     assert.ok(a, "true succeeds");
+        // });
+
+        // QUnit.test("equal test", function(assert) {
+        //     assert.equal(0,0,"0 0 succeeds");
+        //     assert.equal("",0,"Empty 0 succeeds");
+        //     assert.equal("","","Empty Empty succeeds");
+        //     assert.equal(0,false,"0 false succeeds");
+        //     assert.equal(1,true,"1 true succeeds");
+
+        //     assert.equal(3,"three","3 3 succeeds");
+        //     assert.equal(null,false,"0 false succeeds");
+        // });
+
+        // QUnit.test("deepEqual test", function(assert) {
+        //     var obj = {foo:'bar'};
+        //     assert.deepEqual(obj, {foo:'bar'}, "Two obj can be same in val");
+        // });
+
+        QUnit.module('Module1');
+            QUnit.test('ok test1',
+            function(assert) {
+                assert.ok(true, "true succeeds");
+            });
+            QUnit.test('ok test2',
+            function(assert) {
+                assert.ok(true, "true succeeds");
+            });
+        QUnit.module('Module2');
+            QUnit.test('ok test3',
+            function(assert) {
+                assert.ok(false, "true succeeds");
+            });
+            QUnit.test('ok test4',
+            function(assert) {
+                assert.ok(true, "true succeeds");
+            });
+
+    </script>
+</body>
+</html>

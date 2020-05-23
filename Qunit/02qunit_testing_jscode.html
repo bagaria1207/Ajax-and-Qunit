@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.6.2.css">
+    <script src="https://code.jquery.com/qunit/qunit-2.6.2.js"></script>
+</head>
+<body>
+    <div id="qunit"></div>    
+    <div id="qunit-fixture"></div>    
+
+    <script>
+        QUnit.test('max test', function(assert) {
+            assert.equal(max(5,9,2,89,-34),89,"Getting max value!");
+            assert.equal(max(-5,-9,-2,-89,-34),-2,"Getting max value!");
+        });
+    </script>
+
+    <script>
+        function max() {
+            var maxNo = arguments[0];
+            for(var i=0;i<arguments.length;i++) {
+                if(arguments[i] > maxNo) {
+                    maxNo = arguments[i];
+                }
+            }
+            return maxNo;
+        }
+    </script>
+</body>
+</html>
